@@ -1,0 +1,16 @@
+{
+  "admin": {
+    "username": "admin",
+    "password": "dcddb75469b4b4875094e14561e573d8",
+    "loginToken": "",
+    "logs": [
+      {
+        "time": "2025-08-03T05:02:55.004Z",
+        "type": "ERROR",
+        "message": "Build Failed - Build Command Failed - Command failed: apkmod -r \"/data/data/com.termux/files/home/haxRat/server/app/factory/decompiled\" -o \"/data/data/com.termux/files/home/haxrat/build.apk\"\n"
+      }
+    ],
+    "ipLog": []
+  },
+  "clients": []
+}

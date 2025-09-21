@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<% include partials/head.ejs %>
+
+<body>
+    <style type="text/css">
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .logo {
+            width: 450px;
+            height: 420px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+        }
+
+        .login-title {
+            color: #333;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .input-field {
+            width: 95%;
+            padding: 25px 40px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 50px;
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-size: 26px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .input-field:focus {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        .login-button {
+            width: 95%;
+            padding: 25px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .login-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+
+    <div class="login-container">
+        <h1 class="login-title">Welcome to Login</h1>
+        <img src="/logo.png" class="logo" alt="Logo">
+        
+        <form method="POST">
+            <input type="text" name="username" placeholder="00000" class="input-field" required>
+            <input type="password" name="password" placeholder="00000" class="input-field" required>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        
+        <div class="footer">
+            <% include partials/footer.ejs %>
+        </div>
+    </div>
+</body>
+</html>
