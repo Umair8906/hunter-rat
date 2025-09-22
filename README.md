@@ -39,14 +39,6 @@ cd hunter-rat
 ```
 bash setup.sh
 ```
-
-## Password Change Type
-```
-bash pass
-```
-## Run server
-```
-admin0
 ```
 
 ## When copy and paste the code below won't work 
@@ -60,9 +52,8 @@ Npm install All working `npm install`
 ```
 node index.js
 ```
-- Password Chenge `bash ZeroDark/pass`
 
-9. In your browser navigate to `http://<SERVER IP>:22533` & Login with default username and password ( By default server will run on localhost and to make a client APP you can use [PORTMAP.io](https://portmap.io) to access APP on wide area network ,
+9. In your browser navigate to `http://<SERVER IP>:22533` 
 
 ## Thanks
  - 
